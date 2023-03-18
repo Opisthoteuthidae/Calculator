@@ -1,0 +1,61 @@
+bool isOpen = true;
+
+while (isOpen)
+{
+    Console.WriteLine("Калькулятор.\nДля продолжения нажми любую кнопку.\n");
+    Console.ReadKey();
+    Console.Clear();
+
+
+    Console.WriteLine("Добро пожаловать в калькулятор!");
+
+    double first;
+    double second;
+    double sum;
+    int operation;
+
+    Console.Write("Введите первое число: ");
+    first = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Введите второе число: ");
+    second = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Выбери тип действия: 1 - сложение, 2 - вычитание, 3- умножение, 4- деление: ");
+    operation = Convert.ToInt32(Console.ReadLine());
+    string goodbye = "\nБлагодарим за использование.";
+
+
+
+    for (int i = operation; i == operation; i++)
+    {
+
+
+        if (operation == 1)
+        {
+            sum = first + second;
+            Console.Write($"Результат вычеслений " + sum + ".");
+            Console.WriteLine(goodbye);
+
+        }
+        else if (operation == 2)
+        {
+            sum = first - second;
+            Console.Write($"Результат вычеслений " + sum + ".");
+            Console.WriteLine(goodbye);
+        }
+        else if (operation == 3)
+        {
+            sum = first * second;
+            Console.Write($"Результат вычеслений " + sum + ".");
+            Console.WriteLine(goodbye);
+
+        }
+        else if (operation == 4)
+        {
+            sum = first / second;
+            Console.Write($"Результат вычеслений " + sum + ".");
+            Console.WriteLine(goodbye);
+
+        }
+    }
+}
+
